@@ -1,0 +1,146 @@
+/* App.css - Modern Blog Dashboard Theme */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.dashboard-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.posts-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.detail-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #bdc3c7;
+  padding-bottom: 8px;
+}
+
+.post-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.post-card h3 {
+  font-size: 1.25rem;
+  color: #2980b9;
+  margin-bottom: 8px;
+}
+
+.post-card p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.btn-read {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.btn-read:hover {
+  background: #2980b9;
+}
+
+.post-detail-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 5px solid #2ecc71;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.post-detail-card h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.post-meta {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+}
+
+.post-description {
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.post-content {
+  color: #444;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.placeholder-text {
+  color: #95a5a6;
+  font-style: italic;
+  background: #ffffff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px dashed #bdc3c7;
+}
+
+.loading-state, .error-state {
+  padding: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.error-state {
+  color: #e74c3c;
+}
