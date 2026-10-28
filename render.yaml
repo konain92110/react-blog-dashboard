@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: react-blog-dashboard
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22.14.0
